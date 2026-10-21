@@ -1,0 +1,7 @@
+{
+  "delivery_id": "DLV-0002",
+  "region": "XX",
+  "file": "scores.csv",
+  "expected_rows": 5,
+  "sha256": "f384a714f789f23b4c6da3b2a427de34029beade67a686b12793bf80be457948"
+}

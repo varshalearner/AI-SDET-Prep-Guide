@@ -1,0 +1,3 @@
+*.prod.example.internal
+score-prod-*
+prod-eks*

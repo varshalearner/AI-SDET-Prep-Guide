@@ -1,86 +1,102 @@
 # Senior Interview Prep — Topic-wise Prompts (FICO Score QA Sign-off Role)
 
 ## Kaise use karna hai
-- Har topic ke liye **nayi chat** kholo aur us topic ka poora prompt (code block ke andar wala) copy-paste karo. Har prompt self-contained hai — JD, resume aur format sab andar hai.
-- Order follow karo: Phase 01 → 09. JD must-haves (Phase 01–05) sabse pehle.
+- Har topic ke liye **nayi chat** kholo aur us topic ka poora prompt (code block ke andar wala) copy-paste karo. Har prompt self-contained hai.
+- **Format question-driven hai:** topic poora questions + answers se padhna hai. Har point sirf ek baar aata hai, special/tricky questions end mein. Quiz nahi hai — practice voice mode mein.
+- **Tiers (JD weightage ke hisaab se):** [A] = JD must-have, deep (~15 min, 15 Qs + lab) · [B] = important, medium (~10 min, 10 Qs) · [C] = nice-to-have / resume tools, fast (~5 min, 6 Qs).
+- **Time bachane ki trick:** jab ek topic padh rahi ho, tab tak agle topic ki chat mein prompt bhej do — answer generate hota rahega, wait time zero.
 - Response beech mein ruk jaye toh bas `continue` likho.
-- Quiz ke time answers khud socho, Google mat karo — evaluation tabhi kaam ka hai.
-- Har chat ke end mein jo `.md` file mile, use apne Job Prep folder mein usi phase folder mein save karo (folder name har prompt ke upar diya hai).
-- Credits bachane ke liye: ek chat = ek topic. Lambi chat mein purana context reh jaata hai aur har message mehenga ho jaata hai.
+- Har chat ke end mein jo `.md` file mile, use `fico-interview-prep` folder mein save karo.
+- Ek chat = ek topic (lambi chat mehengi aur slow hoti hai).
+
+## 10-hour plan (46 files)
+| Block | Time | Topics | Kya |
+|---|---|---|---|
+| 1 | 0:00–2:00 | 03–08 [A] + 02 quick revision | Claude Code core (skills, agents, hooks, workflows, test-writing, triage) |
+| 2 | 2:00–3:45 | 09 [B], 10–12 [A], 13 [B], 14 [B], 15–17 [A] | AI output review + testing fundamentals |
+| — | 3:45–4:00 | Break | |
+| 3 | 4:00–5:30 | 18–19 [B], 20–21 [B], 22 [A], 23 [B], 24 [A], 25 [B] | Test strategy, RCA, Linux/SSH/Bash |
+| 4 | 5:30–6:45 | 26–27 [A], 28–29 [B], 30 [A], 31 [B], 32 [A], 33 [B] | Data discipline + role domain (sign-off) |
+| — | 6:45–7:00 | Break | |
+| 5 | 7:00–8:15 | 34 [B], 35–39 [C], 40–42 [B], 43 [C] | Tools + resume defense |
+| 6 | 8:15–8:30 | 44 [B] | Intro & stories |
+| 7 | 8:30–10:00 | 45 mock interview (voice mode, ~50 min) → 46 practical (~30 min) → weak areas revise | Final |
+
+Peeche chal rahi ho toh pehle [C] topics ko sirf 1-min Revision tak padho, phir 46 ko chhota kar do — [A] topics kabhi skip mat karna.
 
 ## Topic list
 
 
 **01-claude-code**
 
-- 01-claude-code-basics — Claude Code Fundamentals
-- 02-claude-md — CLAUDE.md Files
-- 03-skills — Claude Code Skills
-- 04-subagents — Agents & Subagents
-- 05-hooks-mcp-headless — Hooks, MCP & Headless Claude in CI
-- 06-one-command-qa-workflows — Designing One-Command QA Workflows
-- 07-ai-agents-for-writing-tests — Using AI Agents to Write Tests
-- 08-ai-failure-triage — AI-assisted Failure Triage
+- [✅] 01-claude-code-basics — Claude Code Fundamentals
+- [✅] 02-claude-md — CLAUDE.md Files
+- [A] 03-skills — Claude Code Skills
+- [A] 04-subagents — Agents & Subagents
+- [A] 05-hooks-mcp-headless — Hooks, MCP & Headless Claude in CI
+- [A] 06-one-command-qa-workflows — Designing One-Command QA Workflows
+- [A] 07-ai-agents-for-writing-tests — Using AI Agents to Write Tests
+- [A] 08-ai-failure-triage — AI-assisted Failure Triage
 
 **02-ai-output-review**
 
-- 09-reviewing-unfamiliar-code — Reviewing Unfamiliar Code Fast
-- 10-weak-assertions — Weak Assertions
-- 11-false-passes — False Passes
-- 12-validating-generated-tests — Validating AI-Generated Tests
-- 13-skepticism-docs-gaps — Following Docs Precisely & Finding Gaps
+- [B] 09-reviewing-unfamiliar-code — Reviewing Unfamiliar Code Fast
+- [A] 10-weak-assertions — Weak Assertions
+- [A] 11-false-passes — False Passes
+- [A] 12-validating-generated-tests — Validating AI-Generated Tests
+- [B] 13-skepticism-docs-gaps — Following Docs Precisely & Finding Gaps
 
 **03-testing-fundamentals**
 
-- 14-test-design-techniques — Test Design Techniques
-- 15-effective-assertions — Effective Assertions
-- 16-flaky-tests — Flaky Tests: Detection & Isolation
-- 17-product-defect-vs-test-bug — Product Defect vs Test Bug
-- 18-test-strategy-and-pyramid — Test Strategy, Pyramid & CI Gating
-- 19-defect-reporting-rca — Defect Reporting & Root Cause Analysis
+- [B] 14-test-design-techniques — Test Design Techniques
+- [A] 15-effective-assertions — Effective Assertions
+- [A] 16-flaky-tests — Flaky Tests: Detection & Isolation
+- [A] 17-product-defect-vs-test-bug — Product Defect vs Test Bug
+- [B] 18-test-strategy-and-pyramid — Test Strategy, Pyramid & CI Gating
+- [B] 19-defect-reporting-rca — Defect Reporting & Root Cause Analysis
 
 **04-linux-terminal**
 
-- 20-linux-fundamentals — Linux Fundamentals
-- 21-ssh — SSH Deep Dive
-- 22-bash-text-processing — Bash Text Processing
-- 23-bash-scripting — Bash Scripting
-- 24-locked-down-hosts — Working on Locked-down Linux Hosts
-- 25-server-log-debugging — Debugging on Servers via Terminal
+- [B] 20-linux-fundamentals — Linux Fundamentals
+- [B] 21-ssh — SSH Deep Dive
+- [A] 22-bash-text-processing — Bash Text Processing
+- [B] 23-bash-scripting — Bash Scripting
+- [A] 24-locked-down-hosts — Working on Locked-down Linux Hosts
+- [B] 25-server-log-debugging — Debugging on Servers via Terminal
 
 **05-data-discipline**
 
-- 26-data-boundaries-pii — Data Boundaries & PII
-- 27-masking-synthetic-data — Masking & Synthetic Test Data
-- 28-regulated-financial-data — Regulated Financial Data Basics
+- [A] 26-data-boundaries-pii — Data Boundaries & PII
+- [A] 27-masking-synthetic-data — Masking & Synthetic Test Data
+- [B] 28-regulated-financial-data — Regulated Financial Data Basics
 
 **06-role-domain**
 
-- 29-fico-score-domain — FICO Score & Credit Scoring Domain
-- 30-delivery-signoff-process — Automated QA Sign-off for Data Deliveries
-- 31-data-and-model-validation — Data & Model Pipeline QA
-- 32-signoff-reports — Writing Clear, Concise Sign-off Reports
-- 33-quality-metrics — Delivery Quality Metrics
+- [B] 29-fico-score-domain — FICO Score & Credit Scoring Domain
+- [A] 30-delivery-signoff-process — Automated QA Sign-off for Data Deliveries
+- [B] 31-data-and-model-validation — Data & Model Pipeline QA
+- [A] 32-signoff-reports — Writing Clear, Concise Sign-off Reports
+- [B] 33-quality-metrics — Delivery Quality Metrics
 
 **07-tools**
 
-- 34-python-pytest-senior — Python & pytest (Senior)
-- 35-typescript-playwright — TypeScript & Playwright
-- 36-api-testing-rest-assured — API Testing & Rest Assured (Resume Defense)
-- 37-k6-performance-longevity — k6, Performance & Longevity Testing
-- 38-jenkins-github-actions — Jenkins & GitHub Actions
-- 39-aws-docker-k8s-chaos — AWS, Docker, Kubernetes & Chaos Testing
+- [B] 34-python-pytest-senior — Python & pytest (Senior)
+- [C] 35-typescript-playwright — TypeScript & Playwright
+- [C] 36-api-testing-rest-assured — API Testing & Rest Assured (Resume Defense)
+- [C] 37-k6-performance-longevity — k6, Performance & Longevity Testing
+- [C] 38-jenkins-github-actions — Jenkins & GitHub Actions
+- [C] 39-aws-docker-k8s-chaos — AWS, Docker, Kubernetes & Chaos Testing
 
 **08-resume-defense**
 
-- 40-iam-auth-testing — IAM & Auth Testing (Resume Defense)
-- 41-metering-suite-athena — Metering Suite from Scratch (Resume Defense)
-- 42-ai-regression-analyzer — AI Regression Analyzer (Resume Defense)
-- 43-framework-design-senior — Test Framework Design (Senior)
+- [B] 40-iam-auth-testing — IAM & Auth Testing (Resume Defense)
+- [B] 41-metering-suite-athena — Metering Suite from Scratch (Resume Defense)
+- [B] 42-ai-regression-analyzer — AI Regression Analyzer (Resume Defense)
+- [C] 43-framework-design-senior — Test Framework Design (Senior)
 
 **09-final**
 
-- 44-tell-me-about-yourself-and-stories — Intro & Project Stories
+- [B] 44-tell-me-about-yourself-and-stories — Intro & Project Stories
 - 45-mock-interview-senior — Senior Mock Interview
 - 46-signoff-practical-exercise — Practical Take-home Simulation
 
@@ -91,7 +107,7 @@
 # Phase 01-claude-code
 
 ## 01-claude-code-basics — Claude Code Fundamentals
-Save in: `01-claude-code/`
+Save in: `01-claude-code/` · **✅ Done (purane format mein)**
 
 ```text
 **Topic: Claude Code Fundamentals**
@@ -103,12 +119,12 @@ Save in: `01-claude-code/`
 **Is topic mein ye cover karo:** Claude Code kya hai, install/setup, CLI vs IDE vs desktop, agentic loop kaise kaam karta hai, built-in tools (Read, Edit, Write, Bash, Grep, Glob), permission modes aur allow/deny rules, context window, /clear /compact /resume, slash commands, model choice, cost aur credit hygiene, Claude Code ko kab use NAHI karna chahiye. Lab: ek chhote pytest repo pe Claude Code chala ke ek bug fix + test add karwao, aur har step pe dekho kya hua.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `01-claude-code-basics.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `01-claude-code-basics.md`.
 ```
 
 ## 02-claude-md — CLAUDE.md Files
-Save in: `01-claude-code/`
+Save in: `01-claude-code/` · **✅ Done (purane format mein)**
 
 ```text
 **Topic: CLAUDE.md Files**
@@ -120,12 +136,12 @@ Save in: `01-claude-code/`
 **Is topic mein ye cover karo:** CLAUDE.md ka purpose, hierarchy (user-level, project-level, subfolder, imports), Claude ise kab aur kaise load karta hai, kya likhna chahiye (build/test commands, conventions, test-writing rules, assertion standards, 'never do' list, data-masking rules) aur kya nahi likhna chahiye, chhota aur precise kyun rakhna hai, team artifact ki tarah git mein maintain karna, kaise pata karein ki CLAUDE.md actually kaam kar raha hai. Lab: ek API test repo ke liye production-quality CLAUDE.md likho, phir ek bura version likh ke compare karo.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `02-claude-md.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `02-claude-md.md`.
 ```
 
 ## 03-skills — Claude Code Skills
-Save in: `01-claude-code/`
+Save in: `01-claude-code/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Claude Code Skills**
@@ -137,12 +153,12 @@ Save in: `01-claude-code/`
 **Is topic mein ye cover karo:** Skill kya hai, SKILL.md structure, frontmatter (name, description), description se triggering kaise hoti hai, bundled scripts / reference files, progressive disclosure, skill vs CLAUDE.md vs slash command vs subagent — kab kya, skill ko test aur version kaise karein, skill fail ho toh debug kaise karein, team mein skills maintain karna. Lab: 2 skills banao — `write-api-tests` (spec se pytest/Rest Assured tests) aur `signoff-report` (test results se concise sign-off report) — aur unhe test karo.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `03-skills.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `03-skills.md`.
 ```
 
 ## 04-subagents — Agents & Subagents
-Save in: `01-claude-code/`
+Save in: `01-claude-code/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Agents & Subagents**
@@ -154,12 +170,12 @@ Save in: `01-claude-code/`
 **Is topic mein ye cover karo:** Subagent kya hai, `.claude/agents/` definition (tools, model, system prompt), context isolation kyun important hai, kab subagent use karna aur kab nahi, parallel agents, ek agent jo code likhe aur doosra fresh-context reviewer jo usne nahi dekha — 'work grading itself' problem, agents se tests likhwana, failures triage karwana, workflows run karwana, risks (hallucination, scope creep, cost). Lab: ek `failure-triager` subagent aur ek `test-reviewer` subagent banao.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `04-subagents.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `04-subagents.md`.
 ```
 
 ## 05-hooks-mcp-headless — Hooks, MCP & Headless Claude in CI
-Save in: `01-claude-code/`
+Save in: `01-claude-code/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Hooks, MCP & Headless Claude in CI**
@@ -171,12 +187,12 @@ Save in: `01-claude-code/`
 **Is topic mein ye cover karo:** Hooks (PreToolUse, PostToolUse, Stop etc.) — dangerous commands block karna, har edit ke baad tests/lint chalana, output masking; MCP servers kya hain (Jira, GitHub, DB) aur security risks; headless mode `claude -p`, JSON output, CI/Jenkins mein permissions, secrets handling, non-interactive failures. Lab: ek hook jo `rm -rf`/prod hosts block kare, aur ek Jenkins/GitHub Actions stage jo `claude -p` se failure summary banaye.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `05-hooks-mcp-headless.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `05-hooks-mcp-headless.md`.
 ```
 
 ## 06-one-command-qa-workflows — Designing One-Command QA Workflows
-Save in: `01-claude-code/`
+Save in: `01-claude-code/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Designing One-Command QA Workflows**
@@ -188,12 +204,12 @@ Save in: `01-claude-code/`
 **Is topic mein ye cover karo:** Repeatable QA kaam ko one-command workflow mein kaise convert karein: workflow identify karna, inputs/outputs, steps, quality gates, human-in-the-loop checkpoints, idempotency, failure handling, audit trail, deterministic scripts vs LLM steps kab, maintainability. Example: `/signoff <delivery-id>` design karo end-to-end. Lab: ek demo repo jisme CLAUDE.md + skills + subagent milke ek full workflow chalate hain. End mein meri '3-minute live demo' script bhi banao jo main interview mein dikha sakun — honestly as a personal project.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `06-one-command-qa-workflows.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `06-one-command-qa-workflows.md`.
 ```
 
 ## 07-ai-agents-for-writing-tests — Using AI Agents to Write Tests
-Save in: `01-claude-code/`
+Save in: `01-claude-code/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Using AI Agents to Write Tests**
@@ -205,12 +221,12 @@ Save in: `01-claude-code/`
 **Is topic mein ye cover karo:** AI se tests likhwane ka sahi tareeka: spec/acceptance criteria dena, existing patterns dikhana, red-green approach (pehle test fail ho), negative/boundary cases demand karna, review loop, guardrails in CLAUDE.md, kab AI-written tests dangerous hote hain, ownership — test merge karne ka responsibility kiska. Lab: ek REST API ke liye Claude se tests likhwao, phir mujhse review karwao aur meri review ko grade karo.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `07-ai-agents-for-writing-tests.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `07-ai-agents-for-writing-tests.md`.
 ```
 
 ## 08-ai-failure-triage — AI-assisted Failure Triage
-Save in: `01-claude-code/`
+Save in: `01-claude-code/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: AI-assisted Failure Triage**
@@ -222,15 +238,15 @@ Save in: `01-claude-code/`
 **Is topic mein ye cover karo:** Failures classify karna (product bug / test bug / environment / data / flaky), evidence gathering (logs, diffs, recent commits, infra events), log correlation, confidence aur verification, hallucinated root causes ka risk, auto-filing defects ke pitfalls (duplicates, noise). Mere AI regression analyzer ko is lens se deep defend karna sikhao — architecture, data flow, accuracy kaise measure ki, false positives, kya improve karti. Lab: sample Jenkins logs pe triage exercise.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `08-ai-failure-triage.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `08-ai-failure-triage.md`.
 ```
 
 
 # Phase 02-ai-output-review
 
 ## 09-reviewing-unfamiliar-code — Reviewing Unfamiliar Code Fast
-Save in: `02-ai-output-review/`
+Save in: `02-ai-output-review/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Reviewing Unfamiliar Code Fast**
@@ -242,12 +258,12 @@ Save in: `02-ai-output-review/`
 **Is topic mein ye cover karo:** Anjaan codebase jaldi samajhne ka strategy: entry points, test files se intent samajhna, call flow trace karna, git log/blame, grep se navigation, Claude se explain karwana lekin verify karna, review checklist, kya puchna hai. Lab: ek open-source repo ka chhota module do aur 30 min review exercise karao.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `09-reviewing-unfamiliar-code.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `09-reviewing-unfamiliar-code.md`.
 ```
 
 ## 10-weak-assertions — Weak Assertions
-Save in: `02-ai-output-review/`
+Save in: `02-ai-output-review/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Weak Assertions**
@@ -259,12 +275,12 @@ Save in: `02-ai-output-review/`
 **Is topic mein ye cover karo:** Weak assertions ka poora catalogue: sirf status code, `is not None`, `len > 0`, truthy checks, tautology, test apna hi mock assert kare, snapshot blindly update, broad exception catch, partial field checks, floating point, order-dependent comparisons. Har ek ka Python + Java (Rest Assured) + TS example aur strong version. Lab: 15 weak tests do, main fix karungi, tum grade karo.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `10-weak-assertions.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `10-weak-assertions.md`.
 ```
 
 ## 11-false-passes — False Passes
-Save in: `02-ai-output-review/`
+Save in: `02-ai-output-review/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: False Passes**
@@ -276,12 +292,12 @@ Save in: `02-ai-output-review/`
 **Is topic mein ye cover karo:** Test pass hua lekin kuch validate nahi kiya: pytest collection miss (naming), skip/xfail, try/except pass, async not awaited, empty loop mein assertion, mocked system-under-test, wrong fixture/environment, retries jo bug chhupa dein, conditional assertions, assertion inside callback jo kabhi call nahi hua, cached responses. Detect kaise karein. Lab: 10 'green' tests do jo actually galat hain — main dhundhungi.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `11-false-passes.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `11-false-passes.md`.
 ```
 
 ## 12-validating-generated-tests — Validating AI-Generated Tests
-Save in: `02-ai-output-review/`
+Save in: `02-ai-output-review/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Validating AI-Generated Tests**
@@ -293,12 +309,12 @@ Save in: `02-ai-output-review/`
 **Is topic mein ye cover karo:** Kaise prove karein ki test intended behaviour validate karta hai: break-the-code check, mutation testing (mutmut, PIT, Stryker), coverage ki limitations, requirement traceability, missing negative/boundary cases, oracle problem, review checklist for AI tests, 'test passes for the wrong reason'. Lab: mutmut chala ke ek AI-written suite ki strength measure karo.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `12-validating-generated-tests.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `12-validating-generated-tests.md`.
 ```
 
 ## 13-skepticism-docs-gaps — Following Docs Precisely & Finding Gaps
-Save in: `02-ai-output-review/`
+Save in: `02-ai-output-review/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Following Docs Precisely & Finding Gaps**
@@ -310,15 +326,15 @@ Save in: `02-ai-output-review/`
 **Is topic mein ye cover karo:** Shipped documentation ko word-by-word follow karna, ambiguity/gaps/contradictions pakadna, assumptions document karna, doc vs actual behaviour mismatch report karna, skeptical mindset bina negative hue. Lab: ek setup/README do jisme hidden gaps hain — main follow karke gaps report likhungi, tum evaluate karo.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `13-skepticism-docs-gaps.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `13-skepticism-docs-gaps.md`.
 ```
 
 
 # Phase 03-testing-fundamentals
 
 ## 14-test-design-techniques — Test Design Techniques
-Save in: `03-testing-fundamentals/`
+Save in: `03-testing-fundamentals/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Test Design Techniques**
@@ -330,12 +346,12 @@ Save in: `03-testing-fundamentals/`
 **Is topic mein ye cover karo:** Equivalence partitioning, boundary value analysis, decision tables, state transition, pairwise, error guessing, risk-based testing, exploratory testing. Senior angle: kis situation mein kaunsa technique, coverage vs effort trade-off. Examples: score range validation, delivery file fields, API inputs. Lab: ek FICO-Score-delivery style spec pe full test design.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `14-test-design-techniques.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `14-test-design-techniques.md`.
 ```
 
 ## 15-effective-assertions — Effective Assertions
-Save in: `03-testing-fundamentals/`
+Save in: `03-testing-fundamentals/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Effective Assertions**
@@ -347,12 +363,12 @@ Save in: `03-testing-fundamentals/`
 **Is topic mein ye cover karo:** Kya assert karein (behaviour, contract, side effects, data correctness), kitna assert karein, hard vs soft assertions, schema validation, custom matchers, meaningful failure messages, assertion granularity, one-concept-per-test, data comparison (tolerance, ordering). Python + Java examples.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `15-effective-assertions.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `15-effective-assertions.md`.
 ```
 
 ## 16-flaky-tests — Flaky Tests: Detection & Isolation
-Save in: `03-testing-fundamentals/`
+Save in: `03-testing-fundamentals/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Flaky Tests: Detection & Isolation**
@@ -364,12 +380,12 @@ Save in: `03-testing-fundamentals/`
 **Is topic mein ye cover karo:** Flakiness ke causes (timing/async, order dependence, shared state/data, environment, network, time zones, randomness, resource limits), detection (reruns, history analysis, flaky rate), isolation (quarantine, seeds, isolated data, retries ke pros/cons), root-cause fix, team policy. Lab: ek flaky pytest suite do, main isolate karke fix karungi.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `16-flaky-tests.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `16-flaky-tests.md`.
 ```
 
 ## 17-product-defect-vs-test-bug — Product Defect vs Test Bug
-Save in: `03-testing-fundamentals/`
+Save in: `03-testing-fundamentals/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Product Defect vs Test Bug**
@@ -381,12 +397,12 @@ Save in: `03-testing-fundamentals/`
 **Is topic mein ye cover karo:** Triage decision tree: reproduce manually, isolate layer, check test code/data/env, compare with spec, recent changes, evidence collection. Kaise prove karein ki bug product mein hai. Defect report vs test fix ka decision. Real scenarios ke saath practice — 8 failure scenarios do, main classify karungi.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `17-product-defect-vs-test-bug.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `17-product-defect-vs-test-bug.md`.
 ```
 
 ## 18-test-strategy-and-pyramid — Test Strategy, Pyramid & CI Gating
-Save in: `03-testing-fundamentals/`
+Save in: `03-testing-fundamentals/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Test Strategy, Pyramid & CI Gating**
@@ -398,12 +414,12 @@ Save in: `03-testing-fundamentals/`
 **Is topic mein ye cover karo:** Test pyramid/trophy, unit vs API vs UI trade-offs, smoke vs sanity vs regression, test selection, CI quality gates, release criteria, entry/exit criteria, test plan for a new delivery type or region. Mere smoke-on-merge + on-demand regression design ko defend karna sikhao.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `18-test-strategy-and-pyramid.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `18-test-strategy-and-pyramid.md`.
 ```
 
 ## 19-defect-reporting-rca — Defect Reporting & Root Cause Analysis
-Save in: `03-testing-fundamentals/`
+Save in: `03-testing-fundamentals/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Defect Reporting & Root Cause Analysis**
@@ -415,15 +431,15 @@ Save in: `03-testing-fundamentals/`
 **Is topic mein ye cover karo:** Achhi bug report (steps, expected/actual, evidence, impact, severity vs priority), RCA techniques (5 whys, timeline, fault isolation), fix verification across environments, regression risk, hotfix process. Mere 6 releases + 2 hotfixes experience ke liye STAR stories banane mein help.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `19-defect-reporting-rca.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `19-defect-reporting-rca.md`.
 ```
 
 
 # Phase 04-linux-terminal
 
 ## 20-linux-fundamentals — Linux Fundamentals
-Save in: `04-linux-terminal/`
+Save in: `04-linux-terminal/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Linux Fundamentals**
@@ -435,12 +451,12 @@ Save in: `04-linux-terminal/`
 **Is topic mein ye cover karo:** Filesystem layout, navigation, file permissions (rwx, chmod, chown, umask), users/groups, processes (ps, top, kill, signals), environment variables, PATH, package basics, disk/memory (df, du, free). Lab: commands practice set.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `20-linux-fundamentals.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `20-linux-fundamentals.md`.
 ```
 
 ## 21-ssh — SSH Deep Dive
-Save in: `04-linux-terminal/`
+Save in: `04-linux-terminal/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: SSH Deep Dive**
@@ -452,12 +468,12 @@ Save in: `04-linux-terminal/`
 **Is topic mein ye cover karo:** SSH kaise kaam karta hai (keys, host keys, known_hosts), key generation aur permissions, `~/.ssh/config`, jump/bastion hosts (ProxyJump), agent forwarding ke risks, scp/rsync/sftp, port forwarding/tunnels, common errors debug karna (-v). Lab: Docker containers se 2-hop SSH setup bana ke practice.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `21-ssh.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `21-ssh.md`.
 ```
 
 ## 22-bash-text-processing — Bash Text Processing
-Save in: `04-linux-terminal/`
+Save in: `04-linux-terminal/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Bash Text Processing**
@@ -469,12 +485,12 @@ Save in: `04-linux-terminal/`
 **Is topic mein ye cover karo:** grep (regex, -r, -E, -v, -c, context), awk, sed, cut, sort, uniq -c, wc, head/tail -f, xargs, find, pipes aur redirection, jq (agar available ho). Interview-style one-liners: top errors in a log, count per status code, extract IDs. Lab: ek bada sample log de ke 15 tasks.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `22-bash-text-processing.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `22-bash-text-processing.md`.
 ```
 
 ## 23-bash-scripting — Bash Scripting
-Save in: `04-linux-terminal/`
+Save in: `04-linux-terminal/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Bash Scripting**
@@ -486,12 +502,12 @@ Save in: `04-linux-terminal/`
 **Is topic mein ye cover karo:** Shebang, `set -euo pipefail`, variables, quoting, conditionals, loops, functions, exit codes, arguments, traps, here-docs, safe scripting practices, shellcheck. Lab: ek script jo test result files parse karke summary + exit code de (CI-ready).
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `23-bash-scripting.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `23-bash-scripting.md`.
 ```
 
 ## 24-locked-down-hosts — Working on Locked-down Linux Hosts
-Save in: `04-linux-terminal/`
+Save in: `04-linux-terminal/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Working on Locked-down Linux Hosts**
@@ -503,12 +519,12 @@ Save in: `04-linux-terminal/`
 **Is topic mein ye cover karo:** No sudo, no internet, limited tools, read-only dirs, audited sessions — in sab mein kaam kaise karein: available tools discover karna, Python stdlib/awk se kaam chalana, tmux/screen, less, tar/gzip, data host se bahar na nikalna, least-privilege mindset, kya karna bilkul allowed nahi. Lab: restricted Docker container mein tasks.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `24-locked-down-hosts.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `24-locked-down-hosts.md`.
 ```
 
 ## 25-server-log-debugging — Debugging on Servers via Terminal
-Save in: `04-linux-terminal/`
+Save in: `04-linux-terminal/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Debugging on Servers via Terminal**
@@ -520,15 +536,15 @@ Save in: `04-linux-terminal/`
 **Is topic mein ye cover karo:** End-to-end: SSH karke service logs, journalctl, docker logs, kubectl logs/describe/events, timestamps correlate karna, disk/memory issues, config check, evidence ko masked form mein share karna. Lab: ek simulated incident solve karao sirf terminal se.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `25-server-log-debugging.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `25-server-log-debugging.md`.
 ```
 
 
 # Phase 05-data-discipline
 
 ## 26-data-boundaries-pii — Data Boundaries & PII
-Save in: `05-data-discipline/`
+Save in: `05-data-discipline/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Data Boundaries & PII**
@@ -540,12 +556,12 @@ Save in: `05-data-discipline/`
 **Is topic mein ye cover karo:** PII/sensitive data kya hai (credit context mein), data classification, data boundaries (kaunsa data kahan ja sakta hai), least privilege, LLM/AI tools mein kya paste nahi karna, logs/screenshots/Jira/Slack mein data leakage, prod data in lower envs ke risks. Scenario-based questions zyada do.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `26-data-boundaries-pii.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `26-data-boundaries-pii.md`.
 ```
 
 ## 27-masking-synthetic-data — Masking & Synthetic Test Data
-Save in: `05-data-discipline/`
+Save in: `05-data-discipline/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Masking & Synthetic Test Data**
@@ -557,12 +573,12 @@ Save in: `05-data-discipline/`
 **Is topic mein ye cover karo:** Masking techniques (redaction, tokenization, hashing, partial masking, format-preserving), mask-by-default habit, log masking, report masking, synthetic data generation (Faker etc.), referential integrity maintain karna. Lab: Python script jo logs/CSV mask kare + ek Claude Code hook jo shared output mask kare.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `27-masking-synthetic-data.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `27-masking-synthetic-data.md`.
 ```
 
 ## 28-regulated-financial-data — Regulated Financial Data Basics
-Save in: `05-data-discipline/`
+Save in: `05-data-discipline/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Regulated Financial Data Basics**
@@ -574,15 +590,15 @@ Save in: `05-data-discipline/`
 **Is topic mein ye cover karo:** Credit/financial data regulated kyun hai, high-level awareness (consumer credit regulations, data protection laws including India DPDP, audit trails, retention), QA ka role compliance mein, evidence aur traceability. Deep legal detail nahi — interview-level awareness aur QA practices.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `28-regulated-financial-data.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `28-regulated-financial-data.md`.
 ```
 
 
 # Phase 06-role-domain
 
 ## 29-fico-score-domain — FICO Score & Credit Scoring Domain
-Save in: `06-role-domain/`
+Save in: `06-role-domain/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: FICO Score & Credit Scoring Domain**
@@ -594,12 +610,12 @@ Save in: `06-role-domain/`
 **Is topic mein ye cover karo:** Credit score kya hai, FICO Score high-level (range, main factor categories), credit bureaus, score versions/models conceptually, 'score delivery' ka matlab, clients kaun hote hain, regions/delivery types conceptually, quality failures ka business impact. Sirf publicly known information use karo; jo pakka nahi hai usse clearly assumption bolo.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `29-fico-score-domain.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `29-fico-score-domain.md`.
 ```
 
 ## 30-delivery-signoff-process — Automated QA Sign-off for Data Deliveries
-Save in: `06-role-domain/`
+Save in: `06-role-domain/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Automated QA Sign-off for Data Deliveries**
@@ -611,12 +627,12 @@ Save in: `06-role-domain/`
 **Is topic mein ye cover karo:** Data/score delivery ka QA sign-off design: completeness, record counts, schema/format validation, field-level rules, ranges, null/duplicate checks, reconciliation with source, comparison vs previous delivery (distribution shift), go/no-go criteria, evidence pack, automation architecture, nayi delivery type/region add karna scalable kaise ho. Mera Athena-over-S3 metering validation experience connect karo.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `30-delivery-signoff-process.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `30-delivery-signoff-process.md`.
 ```
 
 ## 31-data-and-model-validation — Data & Model Pipeline QA
-Save in: `06-role-domain/`
+Save in: `06-role-domain/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Data & Model Pipeline QA**
@@ -628,12 +644,12 @@ Save in: `06-role-domain/`
 **Is topic mein ye cover karo:** Data quality dimensions, data validation frameworks (Great Expectations / pandera style), golden datasets, distribution/drift checks, model output validation basics, shift-left with data-prep and model teams, SQL-based checks. Lab: pandas + SQL checks on a synthetic score dataset.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `31-data-and-model-validation.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `31-data-and-model-validation.md`.
 ```
 
 ## 32-signoff-reports — Writing Clear, Concise Sign-off Reports
-Save in: `06-role-domain/`
+Save in: `06-role-domain/` · **Tier A · ~15 min · deep**
 
 ```text
 **Topic: Writing Clear, Concise Sign-off Reports**
@@ -645,12 +661,12 @@ Save in: `06-role-domain/`
 **Is topic mein ye cover karo:** Sign-off report structure (summary verdict pehli line mein, scope, results, defects, risks, waivers, recommendation), concise writing, audience ke hisaab se, masked data, evidence links, what NOT to include. Lab: raw test results do, main report likhungi, tum strict senior reviewer ki tarah critique karo.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `32-signoff-reports.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 15 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — chhota hands-on lab: 4–6 steps + expected output, jo main khud chala sakun (macOS pehle, phir Windows). 4) **Special Questions (5, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `32-signoff-reports.md`.
 ```
 
 ## 33-quality-metrics — Delivery Quality Metrics
-Save in: `06-role-domain/`
+Save in: `06-role-domain/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Delivery Quality Metrics**
@@ -662,15 +678,15 @@ Save in: `06-role-domain/`
 **Is topic mein ye cover karo:** Metrics: defect escape rate, pass rate, flaky rate, test coverage (aur limitations), MTTD/MTTR, sign-off cycle time, automation ROI, DORA basics. Kaunsa metric gaming ho sakta hai, leading vs lagging, dashboard design, metrics define karne ka process.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `33-quality-metrics.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `33-quality-metrics.md`.
 ```
 
 
 # Phase 07-tools
 
 ## 34-python-pytest-senior — Python & pytest (Senior)
-Save in: `07-tools/`
+Save in: `07-tools/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Python & pytest (Senior)**
@@ -682,12 +698,12 @@ Save in: `07-tools/`
 **Is topic mein ye cover karo:** Python essentials for SDET, pytest fixtures (scope, yield, conftest), parametrize, markers, plugins, xdist parallelism, reporting, mocking (unittest.mock), test data factories, framework structure. Mere Metering suite (pytest) ko defend karna.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `34-python-pytest-senior.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `34-python-pytest-senior.md`.
 ```
 
 ## 35-typescript-playwright — TypeScript & Playwright
-Save in: `07-tools/`
+Save in: `07-tools/` · **Tier C · ~5 min · fast**
 
 ```text
 **Topic: TypeScript & Playwright**
@@ -699,12 +715,12 @@ Save in: `07-tools/`
 **Is topic mein ye cover karo:** TypeScript basics for testers (types, async/await, interfaces), Playwright architecture, locators, auto-waiting, fixtures, API testing in Playwright, tracing/debugging, parallelism, Playwright vs Cypress vs Selenium. Resume mein claim nahi hai — honest framing sikhao. Lab: chhota Playwright project.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `35-typescript-playwright.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 6 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — lab skip karo; sirf 1 chhota code/command snippet jo interview mein dikhaya ja sake. 4) **Special Questions (2, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: 1 cross-question chain (3 levels deep) ya resume-linked STAR skeleton — jo zyada relevant ho. 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `35-typescript-playwright.md`.
 ```
 
 ## 36-api-testing-rest-assured — API Testing & Rest Assured (Resume Defense)
-Save in: `07-tools/`
+Save in: `07-tools/` · **Tier C · ~5 min · fast**
 
 ```text
 **Topic: API Testing & Rest Assured (Resume Defense)**
@@ -716,12 +732,12 @@ Save in: `07-tools/`
 **Is topic mein ye cover karo:** REST fundamentals, status codes, API test design (positive/negative/boundary/auth), Rest Assured (RequestSpec/ResponseSpec, POJOs, JSONPath, schema validation, filters, logging), framework design for ~2,000 tests across microservices, parallel runs, test data, flakiness. Mere ~2,000 Rest Assured tests pe heavy cross-questioning.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `36-api-testing-rest-assured.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 6 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — lab skip karo; sirf 1 chhota code/command snippet jo interview mein dikhaya ja sake. 4) **Special Questions (2, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: 1 cross-question chain (3 levels deep) ya resume-linked STAR skeleton — jo zyada relevant ho. 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `36-api-testing-rest-assured.md`.
 ```
 
 ## 37-k6-performance-longevity — k6, Performance & Longevity Testing
-Save in: `07-tools/`
+Save in: `07-tools/` · **Tier C · ~5 min · fast**
 
 ```text
 **Topic: k6, Performance & Longevity Testing**
@@ -733,12 +749,12 @@ Save in: `07-tools/`
 **Is topic mein ye cover karo:** Load vs stress vs soak/longevity vs spike, k6 scripting (VUs, stages, thresholds, checks), JMeter→k6 migration kyun aur kaise, metrics (p95/p99, throughput, error rate), 72-hour longevity mein kya monitor kiya (memory leaks, connection pools), results interpretation. Mere claims deep defend karna.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `37-k6-performance-longevity.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 6 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — lab skip karo; sirf 1 chhota code/command snippet jo interview mein dikhaya ja sake. 4) **Special Questions (2, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: 1 cross-question chain (3 levels deep) ya resume-linked STAR skeleton — jo zyada relevant ho. 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `37-k6-performance-longevity.md`.
 ```
 
 ## 38-jenkins-github-actions — Jenkins & GitHub Actions
-Save in: `07-tools/`
+Save in: `07-tools/` · **Tier C · ~5 min · fast**
 
 ```text
 **Topic: Jenkins & GitHub Actions**
@@ -750,12 +766,12 @@ Save in: `07-tools/`
 **Is topic mein ye cover karo:** Jenkins pipelines (declarative, stages, agents, parallel, post, credentials), GitHub Actions (workflows, jobs, matrix, secrets), test reporting, artifacts, flaky handling in CI, smoke on merge vs regression on demand, Claude headless in CI. Mere ~3,000 tests ke CI setup ko defend karna.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `38-jenkins-github-actions.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 6 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — lab skip karo; sirf 1 chhota code/command snippet jo interview mein dikhaya ja sake. 4) **Special Questions (2, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: 1 cross-question chain (3 levels deep) ya resume-linked STAR skeleton — jo zyada relevant ho. 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `38-jenkins-github-actions.md`.
 ```
 
 ## 39-aws-docker-k8s-chaos — AWS, Docker, Kubernetes & Chaos Testing
-Save in: `07-tools/`
+Save in: `07-tools/` · **Tier C · ~5 min · fast**
 
 ```text
 **Topic: AWS, Docker, Kubernetes & Chaos Testing**
@@ -767,15 +783,15 @@ Save in: `07-tools/`
 **Is topic mein ye cover karo:** Docker basics (image, container, Dockerfile, compose), Kubernetes/EKS essentials (pods, deployments, services, probes, events), AWS S3 + Athena, Chaos Mesh (PodChaos, NetworkChaos, etc.), resilience test design, hypothesis/blast radius. Mere Chaos Mesh + EKS + Athena claims deep defend karna.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `39-aws-docker-k8s-chaos.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 6 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — lab skip karo; sirf 1 chhota code/command snippet jo interview mein dikhaya ja sake. 4) **Special Questions (2, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: 1 cross-question chain (3 levels deep) ya resume-linked STAR skeleton — jo zyada relevant ho. 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `39-aws-docker-k8s-chaos.md`.
 ```
 
 
 # Phase 08-resume-defense
 
 ## 40-iam-auth-testing — IAM & Auth Testing (Resume Defense)
-Save in: `08-resume-defense/`
+Save in: `08-resume-defense/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: IAM & Auth Testing (Resume Defense)**
@@ -787,12 +803,12 @@ Save in: `08-resume-defense/`
 **Is topic mein ye cover karo:** OAuth 2.0 flows, OIDC, SAML, JWT (structure, validation, expiry), mTLS, sessions, authorization rules, SSO, OpenAM/Ping AIC conceptually, auth negative testing. Mere ~800 auth tests pe deep cross-questioning.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `40-iam-auth-testing.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `40-iam-auth-testing.md`.
 ```
 
 ## 41-metering-suite-athena — Metering Suite from Scratch (Resume Defense)
-Save in: `08-resume-defense/`
+Save in: `08-resume-defense/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Metering Suite from Scratch (Resume Defense)**
@@ -804,12 +820,12 @@ Save in: `08-resume-defense/`
 **Is topic mein ye cover karo:** Mera DMP Metering suite story: 6 services, ~250 tests, pytest + Cypress BDD, functional + resiliency + performance + longevity, Athena SQL validation of per-client usage aggregation. Framework decisions, trade-offs, challenges, what I'd do differently. Mujhse questions pucho aur mere answers ko sharpen karo — kuch invent mat karna, jo nahi pata vo mujhse pucho.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `41-metering-suite-athena.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `41-metering-suite-athena.md`.
 ```
 
 ## 42-ai-regression-analyzer — AI Regression Analyzer (Resume Defense)
-Save in: `08-resume-defense/`
+Save in: `08-resume-defense/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: AI Regression Analyzer (Resume Defense)**
@@ -821,12 +837,12 @@ Save in: `08-resume-defense/`
 **Is topic mein ye cover karo:** Is JD ke liye sabse important resume story. Architecture, data sources (Jenkins logs, repo history, K8s events), correlation logic, LLM usage, retrieval, Jira auto-filing, chatbot, accuracy/false positives, adoption by IAM + Core teams, limitations, data security. Isko Claude Code skills/agents se kaise compare karun aur aaj banati toh kaise banati. Mujhse details pucho — invent mat karna.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `42-ai-regression-analyzer.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `42-ai-regression-analyzer.md`.
 ```
 
 ## 43-framework-design-senior — Test Framework Design (Senior)
-Save in: `08-resume-defense/`
+Save in: `08-resume-defense/` · **Tier C · ~5 min · fast**
 
 ```text
 **Topic: Test Framework Design (Senior)**
@@ -838,15 +854,15 @@ Save in: `08-resume-defense/`
 **Is topic mein ye cover karo:** Scalable automation framework design (API + UI + perf), layers, config/env, test data, reporting, parallelism, tagging, CI integration, maintainability, ownership across teams, AI-assisted maintenance. Interviewer ki tarah mujhse verbally design karwao aur evaluate karo.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `43-framework-design-senior.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 6 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — lab skip karo; sirf 1 chhota code/command snippet jo interview mein dikhaya ja sake. 4) **Special Questions (2, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: 1 cross-question chain (3 levels deep) ya resume-linked STAR skeleton — jo zyada relevant ho. 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `43-framework-design-senior.md`.
 ```
 
 
 # Phase 09-final
 
 ## 44-tell-me-about-yourself-and-stories — Intro & Project Stories
-Save in: `09-final/`
+Save in: `09-final/` · **Tier B · ~10 min · medium**
 
 ```text
 **Topic: Intro & Project Stories**
@@ -858,8 +874,8 @@ Save in: `09-final/`
 **Is topic mein ye cover karo:** Meri resume + is role ke liye 'Tell me about yourself' (60 sec + 2 min versions) jo AI/Claude Code aur sign-off angle highlight kare, 'Why this role', 6-8 STAR stories (achievements, failure, conflict, independent work, skepticism caught a bug, learning fast), aur Claude Code experience ke baare mein honest answer. Har draft mujhse bolwa ke improve karo.
 
 **Rules:** Maan ke chalo mujhe is topic ka kuch nahi aata — zero se senior-interview level tak le jao. Explanation Hinglish mein, code/commands/model answers English mein. Har jagah *why*, trade-offs, failure modes, "10x scale pe kya hoga", aur decision-making batao — sirf definitions nahi. Examples mein sirf synthetic data, sensitive cheezein masked.
-**Format (isi order mein):** 1) Concept 2) Hinglish Explanation (analogy ke saath) 3) Deep Dive (internals, trade-offs, senior nuances) 4) Real-world Example (FICO Score delivery / API / data-pipeline style) 5) QA/SDET Perspective 6) Hands-on Lab (step-by-step + expected output, jo main khud chala sakun) 7) Common Mistakes & Anti-patterns 8) Interview Questions — 10-12, R1 + senior, har ek ka 60-90 sec spoken model answer 9) Cross-question Chains — 2-3 chains, har ek 4-5 level deep, jaise senior interviewer drill karta hai 10) Resume-linked Questions — sirf meri real claims se, STAR answer skeleton 11) Quick Revision (10 lines).
-Sections 1-11 ke baad **quiz shuru karo: 8-10 questions, ek-ek karke**, mera answer aane do, strictly evaluate karo (score /10, kya missing tha, better answer), phir next. Agar response lamba ho toh parts mein do, main "continue" bolungi. Quiz ke baad poora content ek downloadable `.md` file mein do, filename: `44-tell-me-about-yourself-and-stories.md`.
+**Format (question-driven, no repetition):** 1) **Core Idea** — max 5 lines, ek analogy ke saath. 2) **Q&A Learning — 10 questions**, basic → senior order. Upar 'Is topic mein ye cover karo' ka har point kam se kam ek question mein cover ho — koi important point skip nahi hona chahiye. Har question mein: (a) Hinglish mein 2–3 line samajh + why / trade-off / failure mode, (b) English mein 60-sec spoken model answer, (c) code/command sirf jahan zaroori ho (macOS pehle, phir Windows). 3) **Mini Lab** — sirf 3–4 step ka lab outline + expected output (padhne layak, chalana optional). 4) **Special Questions (3, end mein)** — tricky / trap / scenario questions jo senior interviewer poochta hai: kam se kam 1 cross-question chain (3 levels deep) aur 1 resume-linked STAR skeleton (sirf meri real claims se). 5) **1-min Revision** — 6–8 keyword bullets.
+**No-repetition rule:** koi point, example ya answer do jagah mat likhna — har cheez sirf ek baar, sabse relevant question mein. Alag Concept / Deep Dive / Mistakes / QA Perspective / Real-world sections nahi chahiye; woh content questions ke andar hi aaye. Filler mat likho, crisp rakho. Quiz nahi chahiye. Agar response lamba ho toh parts mein do, main "continue" bolungi. End mein poora content (saare answers fully expanded) ek downloadable `.md` file mein do, filename: `44-tell-me-about-yourself-and-stories.md`.
 ```
 
 

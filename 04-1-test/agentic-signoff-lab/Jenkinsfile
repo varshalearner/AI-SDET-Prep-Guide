@@ -1,0 +1,44 @@
+pipeline {
+  agent any
+  options { timeout(time: 20, unit: 'MINUTES') }
+  stages {
+    stage('Setup') {
+      steps {
+        sh 'python3 -m venv .venv && . .venv/bin/activate && pip install -q -r requirements.txt && mkdir -p reports logs'
+      }
+    }
+    stage('API tests') {
+      steps {
+        sh '''
+          . .venv/bin/activate
+          nohup python mock_api.py > logs/mock.log 2>&1 &
+          sleep 1
+          python -m pytest tests/api -q --junitxml=reports/junit.xml
+        '''
+      }
+    }
+  }
+  post {
+    always {
+      sh '. .venv/bin/activate && python scripts/parse_junit.py reports/junit.xml > reports/summary.json || true'
+      junit allowEmptyResults: true, testResults: 'reports/junit.xml'
+    }
+    failure {
+      // Advisory only: the build result comes from the tests, never from the AI step.
+      withCredentials([string(credentialsId: 'anthropic-api-key', variable: 'ANTHROPIC_API_KEY')]) {
+        timeout(time: 5, unit: 'MINUTES') {
+          sh '''
+            claude -p "$(cat .github/prompts/failure-summary.md)" --allowedTools "Read" \
+              --max-turns 3 --output-format json > reports/ai.json \
+            && jq -r '.result' reports/ai.json > reports/ai-summary.md \
+            || echo "AI summary unavailable" > reports/ai-summary.md
+          '''
+        }
+      }
+    }
+    cleanup {
+      sh 'pkill -f mock_api.py || true'
+      archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
+    }
+  }
+}

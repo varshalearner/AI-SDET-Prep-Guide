@@ -1,0 +1,8 @@
+a1b2c3d  2026-10-19  dev-a  score-api: tighten product validation       src/validation.py
+e4f5a6b  2026-10-19  qa-b   tests: update reason code fixture           tests/fixtures/reason_codes.json
+9d8c7b6  2026-10-19  qa-c   ci: bump pytest-timeout 2.2 -> 2.3          requirements-dev.txt
+
+e4f5a6b diff (masked):
+-  "<ID>": ["R01", "R07", "R12"],
++  "<ID>": ["R01", "R07"],
+Spec v1.4 §4.2: R12 is a valid reason code for SCORE_10.

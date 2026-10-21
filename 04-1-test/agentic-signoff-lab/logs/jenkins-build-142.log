@@ -1,0 +1,27 @@
+[2026-10-20T02:10:01Z] Started by timer: job score-delivery-regression #142 (branch main)
+[2026-10-20T02:10:03Z] Deployed image score-api:1.8.3 (built from a1b2c3d) to namespace qa-synth
+[2026-10-20T02:10:03Z] metering-agg image 3.2.0 unchanged since #135
+[2026-10-20T02:10:04Z] Last successful build: #141 (score-api:1.8.2)
+[2026-10-20T02:10:05Z] Delivery under test: DLV-0099 (region XX, expected_rows=5000)
+[2026-10-20T02:12:10Z] ===== API suite =====
+[2026-10-20T02:12:11Z] FAILED tests/api/test_score_requests.py::test_score_requests_invalid_product_returns_400
+[2026-10-20T02:12:11Z]   assert 201 == 400 (request product=SCORE_99)
+[2026-10-20T02:12:14Z] FAILED tests/api/test_reason_codes.py::test_reason_codes_match_fixture
+[2026-10-20T02:12:14Z]   AssertionError: expected ['R01', 'R07'] got ['R01', 'R07', 'R12'] for consumer_ref=<ID>
+[2026-10-20T02:12:30Z] API suite: 2 failed, 118 passed
+[2026-10-20T02:14:02Z] ===== Metering suite =====
+[2026-10-20T02:14:07Z] FAILED tests/metering/test_usage_aggregation.py::test_daily_totals_per_client
+[2026-10-20T02:14:07Z]   ConnectionError: host='metering-agg', port=8080: Connection refused
+[2026-10-20T02:14:12Z] FAILED tests/metering/test_usage_aggregation.py::test_monthly_rollup
+[2026-10-20T02:14:12Z]   ConnectionError: host='metering-agg', port=8080: Connection refused
+[2026-10-20T02:14:29Z] FAILED tests/metering/test_usage_events.py::test_event_ingest_ack
+[2026-10-20T02:14:29Z]   ConnectionError: host='metering-agg', port=8080: Connection refused
+[2026-10-20T02:14:52Z] Metering suite: 3 failed, 61 passed
+[2026-10-20T02:16:00Z] ===== Batch suite =====
+[2026-10-20T02:16:40Z] FAILED tests/batch/test_batch_status.py::test_batch_status_poll_completes
+[2026-10-20T02:16:40Z]   TimeoutError: batch job did not reach COMPLETED within 30s (last status=RUNNING)
+[2026-10-20T02:16:41Z] RERUN tests/batch/test_batch_status.py::test_batch_status_poll_completes -> PASSED (completed in 22s)
+[2026-10-20T02:17:05Z] FAILED tests/batch/test_delivery_file.py::test_score_file_row_count
+[2026-10-20T02:17:05Z]   assert 4999 == 5000 (deliveries/DLV-0099/scores.csv; checksum_ok=False)
+[2026-10-20T02:17:20Z] Batch suite: 2 failed, 40 passed (1 rerun)
+[2026-10-20T02:17:21Z] Finished: FAILURE

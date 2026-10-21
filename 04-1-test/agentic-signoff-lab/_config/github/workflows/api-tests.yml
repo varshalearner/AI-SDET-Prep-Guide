@@ -1,0 +1,36 @@
+name: api-tests
+on: [push, workflow_dispatch]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install pytest requests && mkdir -p reports logs
+      - name: Start mock API
+        run: nohup python mock_api.py > logs/mock.log 2>&1 & sleep 1
+      - name: Run tests (this decides pass/fail)
+        run: python -m pytest tests/api -q --junitxml=reports/junit.xml
+      - name: Parse + mask results (deterministic)
+        if: always()
+        run: python scripts/parse_junit.py reports/junit.xml > reports/summary.json
+      - name: AI failure summary (advisory only)
+        if: failure()
+        continue-on-error: true
+        timeout-minutes: 5
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          claude -p "$(cat .github/prompts/failure-summary.md)" \
+            --allowedTools "Read" --max-turns 3 --output-format json > reports/ai.json
+          jq -e '.is_error == false' reports/ai.json
+          jq -r '.result' reports/ai.json > reports/ai-summary.md
+          cat reports/ai-summary.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: test-reports, path: reports/ }

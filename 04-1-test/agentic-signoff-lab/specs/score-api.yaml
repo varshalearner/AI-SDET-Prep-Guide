@@ -1,0 +1,30 @@
+openapi: 3.0.3
+info: {title: Synthetic Score Request API, version: 1.0.0}
+paths:
+  /v1/score-requests:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [request_id, client_id, consumer_ref, product]
+              properties:
+                request_id:   {type: string, format: uuid}
+                client_id:    {type: string, example: "CLI-0001"}
+                consumer_ref: {type: string, example: "CON-0001"}
+                product:      {type: string, enum: [SCORE_8, SCORE_10]}
+      responses:
+        "201":
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [request_id, status, score]
+                properties:
+                  request_id: {type: string}
+                  status:     {type: string, enum: [ACCEPTED]}
+                  score:      {type: integer, minimum: 300, maximum: 850}
+        "400": {description: Missing field, invalid JSON, or product not in enum}

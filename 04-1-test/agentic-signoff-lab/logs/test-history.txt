@@ -1,0 +1,2 @@
+test_batch_status_poll_completes: failed in #127, #133, #139 (3 of last 20 runs); passed on rerun each time
+all other failing tests in #142: passed in each of the last 20 runs

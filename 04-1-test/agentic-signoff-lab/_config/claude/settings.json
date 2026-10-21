@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/parse_junit.py *)",
+      "Bash(python scripts/run_signoff.py *)",
+      "Bash(python -m pytest *)",
+      "Bash(git log *)"
+    ],
+    "deny": [
+      "Read(./data/raw/**)",
+      "Bash(curl *)",
+      "Bash(ssh *)",
+      "Bash(python scripts/approve.py *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      { "matcher": "Bash",
+        "hooks": [{ "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard_bash.py\"" }] },
+      { "matcher": "Write|Edit",
+        "hooks": [{ "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/mask_guard.py\"" }] }
+    ],
+    "PostToolUse": [
+      { "matcher": "Write|Edit",
+        "hooks": [{ "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/after_edit.py\"" }] }
+    ]
+  }
+}
